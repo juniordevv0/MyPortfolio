@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Portfolio Website</title>
+    <style>
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Ricky</a>
+        <div class="hamburger" id="hamburger-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav id="nav-links">
+            <div class="close-btn" id="close-btn">&times;</div> <!-- Close button -->
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link active">About me</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#work" class="nav-link">Works</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Ricky Sarmiento</span></h1>
+            <h4 class="intro-text"><span class="highlight">Web Developer</span></h4>
+            <p>Passionate about crafting responsive, user-friendly, and innovative websites</p>
+            <a href="#work" class="btn">See my works</a>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <img src="image.jpg" alt="Ricky's Profile">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <div class="card">
+                <p>"Hello, I’m Ricky G. Sarmiento passionate Web Developer from San Jose Batangas. My mission is to craft responsive, user-friendly websites and deliver tailored solutions that help businesses thrive. 
+                    I hold a Bachelor’s Degree in Computer Engineering from Lyceum of the Philippines University-Batangas, where I honed my skills in building innovative digital experiences.</p>
+
+                <p>Currently, as a System Developer, I specialize in system development, feature enhancements, database restructuring, and optimizing performance. 
+                    I take pride in creating scalable systems that are not only efficient but also elevate functionality to meet the dynamic needs of users and businesses alike."</p>
+            </div>            
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+    
+<!-- Skills Section -->
+<section id="skills" class="section">
+    <h2>My Skills</h2>
+    <!-- <p>Here are some of the technologies and tools I'm proficient in:</p> -->
+    
+    <!-- Outer scrolling container -->
+    <div class="scroll-container">
+        <!-- Inner scrolling content -->
+        <div class="scroll-content">
+            <div class="skill card">
+                <i class="fab fa-html5"></i>
+                <p>HTML5</p>
+            </div>
+            <div class="skill card">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS3</p>
+            </div>
+            <div class="skill card">
+                <i class="fab fa-js-square"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill card">
+                <i class="fab fa-php"></i>
+                <p>PHP</p>
+            </div>
+            <div class="skill card">
+                <i class="fab fa-laravel"></i>
+                <p>Laravel</p>
+            </div>
+            <div class="skill card">
+                <i class="fab fa-php"></i>
+                <p>CodeIgniter</p>
+            </div>
+            <div class="skill card">
+                <i class="fab fa-js"></i>
+                <p>jQuery</p>
+            </div>
+            <div class="skill card">
+                <i class="fas fa-database"></i>
+                <p>MySQL</p>
+            </div>
+            <div class="skill card">
+                <i class="fab fa-bootstrap"></i>
+                <p>Bootstrap</p>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="works" id="work">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-description">Discover some of the projects we've proudly worked on.</p>
+                <div class="work-grid">
+                    <div class="work-item">
+                        <img src="Picture2.png" alt="Project 1">
+                        <h3>Online Booking System</h3>
+                        <p>A brief description of the project goes here.</p>
+                    </div>
+                    <div class="work-item">
+                        <img src="ticketing.png" alt="Project 2">
+                        <h3>Ticketing System</h3>
+                        <p>A brief description of the project goes here.</p>
+                    </div>
+                    <div class="work-item">
+                        <img src="apsti.png" alt="Project 3">
+                        <h3>Apstii website</h3>
+                        <p>A brief description of the project goes here.</p>
+                    </div>
+                    <div class="work-item">
+                        <img src="Picture3.png" alt="Project 4">
+                        <h3>CMS System</h3>
+                        <p>A brief description of the project goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </section>   
+        
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Ricky's Portfolio | All Rights Reserved</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </footer>
+        
+       <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const header = document.querySelector('header');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section');
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            let lastScrollY = window.scrollY;
+            let isHeaderHidden = false;
+        
+            // Function to highlight active navigation link
+            const highlightActiveLink = () => {
+                let currentSection = '';
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop - 100; // Adjust for header height
+                    const sectionHeight = section.offsetHeight;
+                    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+        
+                navLinks.forEach((link) => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(currentSection)) {
+                        link.classList.add('active');
+                    }
+                });
+            };
+        
+            // Event listener for scrolling
+            window.addEventListener('scroll', () => {
+                // Toggle header visibility on scroll
+                if (window.scrollY > lastScrollY && !isHeaderHidden) {
+                    header.classList.add('scrolled');
+                    isHeaderHidden = true;
+                } else if (window.scrollY < lastScrollY && isHeaderHidden) {
+                    header.classList.remove('scrolled');
+                    isHeaderHidden = false;
+                }
+                lastScrollY = window.scrollY;
+        
+                // Highlight the active link
+                highlightActiveLink();
+        
+                // Show or hide scroll-to-top button
+                if (scrollToTopBtn) {
+                    scrollToTopBtn.style.display = window.scrollY > 500 ? 'block' : 'none';
+                }
+            });
+        
+            // Scroll-to-top button functionality
+            if (scrollToTopBtn) {
+                scrollToTopBtn.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+        
+            // Hamburger menu functionality
+            const hamburger = document.getElementById('hamburger-icon');
+            const nav = document.getElementById('nav-links');
+            const closeBtn = document.getElementById('close-btn');
+        
+            if (hamburger && nav) {
+                hamburger.addEventListener('click', () => {
+                    nav.classList.toggle('active');
+                });
+        
+                if (closeBtn) {
+                    closeBtn.addEventListener('click', () => {
+                        nav.classList.remove('active');
+                    });
+                }
+        
+                navLinks.forEach((link) => {
+                    link.addEventListener('click', () => {
+                        nav.classList.remove('active');
+                    });
+                });
+        
+                document.addEventListener('click', (event) => {
+                    if (!nav.contains(event.target) && !hamburger.contains(event.target)) {
+                        nav.classList.remove('active');
+                    }
+                });
+            }
+        
+            // Fade-in effect on sections
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active-section', 'fade-in');
+                    } else {
+                        entry.target.classList.remove('active-section', 'fade-in');
+                    }
+                });
+            }, { threshold: 0.1 });
+        
+            sections.forEach(section => observer.observe(section));
+        
+            // Highlight the active link on page load
+            highlightActiveLink();
+        });
+        
+       </script> 
+</body>
+</html>
