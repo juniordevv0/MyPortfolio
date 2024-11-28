@@ -588,26 +588,49 @@ span {
     }
 }
 
-/* Social Icons */
 .social-icons {
     display: flex;
+    gap: 15px;
     justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 2rem; /* Add space below the icons */
-    animation: fadeSlideIn 1.2s ease-in-out; /* Entrance animation */
+    margin-top: 20px;
 }
 
-/* Keyframe for fading and sliding in from the bottom */
-@keyframes fadeSlideIn {
+.social-icons a {
+    font-size: 24px;
+    color: #333;
+    opacity: 0; /* Start invisible */
+    transform: translateX(-100%); /* Start far off-screen to the left */
+    animation: slideInFromLeft 0.7s ease forwards; /* Apply the animation */
+}
+
+.social-icons a:nth-child(1) {
+    animation-delay: 0s; /* First icon starts immediately */
+}
+
+.social-icons a:nth-child(2) {
+    animation-delay: 0.3s; /* Second icon starts 0.3 seconds later */
+}
+
+.social-icons a:nth-child(3) {
+    animation-delay: 0.6s; /* Third icon starts 0.6 seconds later */
+}
+
+.social-icons a:nth-child(4) {
+    animation-delay: 0.9s; /* Fourth icon starts 0.9 seconds later */
+}
+
+/* Keyframes for sliding in from the left */
+@keyframes slideInFromLeft {
     0% {
-        transform: translateY(30px); /* Start slightly below */
-        opacity: 0; /* Invisible at the start */
+        opacity: 0;
+        transform: translateX(-100%);
     }
     100% {
-        transform: translateY(0); /* Move to original position */
-        opacity: 1; /* Fully visible */
+        opacity: 1;
+        transform: translateX(0);
     }
 }
+
 
 /* Social Icon Link Styles */
 .social-icons a {
@@ -1572,7 +1595,7 @@ footer .footer-links a:hover {
 
 .work-card img {
     width: 100%; /* Ensures the image spans the card width */
-    height: 200px; /* Sets a fixed height for uniformity */
+    height: 300px; /* Sets a fixed height for uniformity */
     object-fit: cover; /* Crops the image to fit the dimensions without distortion */
     display: block; /* Prevents spacing issues caused by inline-block behavior */
     border-radius: 5px; /* Optional: Adds a slight curve to the corners */

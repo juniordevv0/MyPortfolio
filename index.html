@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css">
     
     <title>Portfolio Website</title>
@@ -29,7 +28,7 @@
             <a href="#work" class="nav-link">Works</a>
         </nav>
     </header>
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h1>Hi, It's <span>Ricky Sarmiento</span></h1>
             <h4 class="intro-text"><span class="highlight">Web Developer</span></h4>
@@ -56,84 +55,90 @@
             </div>
         </div>
     </section>
-    
-<!-- Skills Section -->
-<section id="skills" class="section">
-    <h2>My Skills</h2>
-    <!-- <p>Here are some of the technologies and tools I'm proficient in:</p> -->
-    
-    <!-- Outer scrolling container -->
-    <div class="scroll-container">
-        <!-- Inner scrolling content -->
-        <div class="scroll-content">
-            <div class="skill card">
-                <i class="fab fa-html5"></i>
-                <p>HTML5</p>
-            </div>
-            <div class="skill card">
-                <i class="fab fa-css3-alt"></i>
-                <p>CSS3</p>
-            </div>
-            <div class="skill card">
-                <i class="fab fa-js-square"></i>
-                <p>JavaScript</p>
-            </div>
-            <div class="skill card">
-                <i class="fab fa-php"></i>
-                <p>PHP</p>
-            </div>
-            <div class="skill card">
-                <i class="fab fa-laravel"></i>
-                <p>Laravel</p>
-            </div>
-            <div class="skill card">
-                <i class="fab fa-php"></i>
-                <p>CodeIgniter</p>
-            </div>
-            <div class="skill card">
-                <i class="fab fa-js"></i>
-                <p>jQuery</p>
-            </div>
-            <div class="skill card">
-                <i class="fas fa-database"></i>
-                <p>MySQL</p>
-            </div>
-            <div class="skill card">
-                <i class="fab fa-bootstrap"></i>
-                <p>Bootstrap</p>
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <!-- <p>Here are some of the technologies and tools I'm proficient in:</p> -->
+
+        <!-- Outer scrolling container -->
+        <div class="scroll-container">
+            <!-- Inner scrolling content -->
+            <div class="scroll-content">
+                <div class="skill card">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="skill card">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="skill card">
+                    <i class="fab fa-js-square"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill card">
+                    <i class="fab fa-php"></i>
+                    <p>PHP</p>
+                </div>
+                <div class="skill card">
+                    <i class="fab fa-laravel"></i>
+                    <p>Laravel</p>
+                </div>
+                <div class="skill card">
+                    <i class="fab fa-php"></i>
+                    <p>CodeIgniter</p>
+                </div>
+                <div class="skill card">
+                    <i class="fab fa-js"></i>
+                    <p>jQuery</p>
+                </div>
+                <div class="skill card">
+                    <i class="fas fa-database"></i>
+                    <p>MySQL</p>
+                </div>
+                <div class="skill card">
+                    <i class="fab fa-bootstrap"></i>
+                    <p>Bootstrap</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+        </section>
         <section class="works" id="work">
             <div class="container">
                 <h2 class="section-title">Projects</h2>
                 <p class="section-description">Discover some of the projects we've proudly worked on.</p>
-                <div class="work-grid">
-                    <div class="work-item">
+                <div class="work-row">
+                    <div class="work-card">
                         <img src="Picture2.png" alt="Project 1">
-                        <h3>Online Booking System</h3>
-                        <p>A brief description of the project goes here.</p>
+                        <div class="card-content">
+                            <h3>Online Booking </h3>
+                            <p>A brief description of the project goes here.</p>
+                        </div>
                     </div>
-                    <div class="work-item">
+                    <div class="work-card">
                         <img src="ticketing.png" alt="Project 2">
-                        <h3>Ticketing System</h3>
-                        <p>A brief description of the project goes here.</p>
+                        <div class="card-content">
+                            <h3>Ticketing System</h3>
+                            <p>A brief description of the project goes here.</p>
+                        </div>
                     </div>
-                    <div class="work-item">
+                    <div class="work-card">
                         <img src="apsti.png" alt="Project 3">
-                        <h3>Apstii website</h3>
-                        <p>A brief description of the project goes here.</p>
+                        <div class="card-content">
+                            <h3>Blogs</h3>
+                            <p>A brief description of the project goes here.</p>
+                        </div>
                     </div>
-                    <div class="work-item">
+                    <div class="work-card">
                         <img src="Picture3.png" alt="Project 4">
-                        <h3>CMS System</h3>
-                        <p>A brief description of the project goes here.</p>
+                        <div class="card-content">
+                            <h3>CMS System</h3>
+                            <p>A brief description of the project goes here.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>   
-        
+        </section>
         <footer>
             <div class="container">
                 <p>&copy; 2024 Ricky's Portfolio | All Rights Reserved</p>
@@ -144,7 +149,6 @@
                 </ul>
             </div>
         </footer>
-        
        <script>
         document.addEventListener("DOMContentLoaded", () => {
             const header = document.querySelector('header');
@@ -248,5 +252,5 @@
         });
         
        </script> 
-</body>
+    </body>
 </html>
